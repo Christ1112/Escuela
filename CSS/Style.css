@@ -1,0 +1,52 @@
+    body.formulario-inicio{
+        text-align: center;
+    }
+
+    #encabezado{
+        margin-bottom: 0%;
+    }
+    
+    .menubr{
+        background-color: rgb(70, 70, 70); 
+    }
+    
+    #principal2{
+        margin-left: 20%;
+    }
+    
+    #menus{
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    .princ{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    #text{
+        color: rgb(116, 116, 116);
+    }
+    
+    .textpr{
+        color: white;
+    }
+    
+    .jumbo{
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    #textde{
+        text-align: right;
+    }
+
+    .tabladatos{
+        text-align: center;
+    }
+
+    button{
+        cursor: pointer;
+    }
