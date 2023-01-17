@@ -15,12 +15,10 @@
     <div class="bg-dark collapse show" id="navbarHeader">    
     <div class="container">
             <div class="row">
-                <a href="principal.html"><img src="IMG/empresa.jpg" width="65" alt=""></a>
                 <div class="col-sm-8 col-md-7 py-1">
                     <h4 class="text-white">Christian Ganzo ®</h4>
-                    
                 </div>
-                <div class="col-sm-2 col-md-3 py-1">
+                <div class="col-sm-2 col-md-5 py-1">
                     <h4 class="text-white">
                         <form name="formulario" method="post" action="principal.html">
                         <input type="submit" class="btn btn-info" name="boton" value="Pagina Principal">
@@ -33,7 +31,9 @@
 </header>
 
 <body class="formulario-inicio">
-  <?php
+    <img src="IMG/empresa.jpg" height="300">
+<!--conexion a bases de datos-->
+<?php
     $id=$_GET["IDP"];
 
 $usuario = "root";
@@ -50,19 +50,48 @@ $resul = mysqli_query( $conexion, $query ) or die ( "Algo ha ido mal en la consu
 
 while ($columna = mysqli_fetch_array( $resul )){
 
-        echo "<form name='formulario' method='post' action='modificadoP.php'>";
-        echo "<h2>Modificacion:</h2><br>";
-        echo "ID (no cambiar)<br> <input type='text' name='V1' value='".$id."'>";
-        echo "<br><br><h2>Modificar Datos:</h2><br>";
-        echo "Introdusca Su Nombre<br> <input type='text' name='V2' value='".$columna['nombre']."'><br>";
-        echo "Introdusca su Correo Electronico <br> <input type='text' name='V3' value='".$columna['correo']."'><br>";
-        echo "Introdusca su Numero Telefonico <br> <input type='text' name='V4' value='".$columna['numero']."'><br>";
-        echo "Introdusca su Fecha de Nacimiento <br> <input type='date' name='V5' value='".$columna['cumpleaños']."'><br>";
-        echo "<input type='submit' name='Actualizar' value='Actualizar'><br><br>";
-        echo "</form>";
-        echo "<br><br><a href='consultar.php'>Ir a Consultas</a>";
+    echo "<form name='formulario' method='post' action='modificadoP.php'>";
+    echo "<h2>Actualizar Usuario</h2><br>";
+    echo "<center>";
+    echo "<div class='col-md-4 col-sm-6'>";
+    echo "<div class='input-group mb-3'>";
+    echo "<div class='input-group-prepend'>";
+    echo "<span class='input-group-text' id='basic-addon1'>➝</span>";
+    echo "</div>";
+    echo "<br> <input type='text' class='form-control' name='V1' value='".$id."'>";
+    echo "</div>";
+    echo "<div class='input-group mb-3'>";
+    echo "<div class='input-group-prepend'>";
+    echo "<span class='input-group-text' id='basic-addon1'>➝</span>";
+    echo "</div>";
+    echo "<br> <input type='text' class='form-control' name='V2' value='".$columna['nombre']."'><br>";
+    echo "</div>";
+    echo "<div class='input-group mb-3'>";
+    echo "<div class='input-group-prepend'>";
+    echo "<span class='input-group-text' id='basic-addon1'>➝</span>";
+    echo "</div>";
+        echo "<br> <input type='text' class='form-control' name='V3' value='".$columna['correo']."'><br>";
+        echo "</div>";
+    echo "<div class='input-group mb-3'>";
+    echo "<div class='input-group-prepend'>";
+    echo "<span class='input-group-text' id='basic-addon1'>➝</span>";
+    echo "</div>";
+        echo "<br> <input type='text' class='form-control' name='V4' value='".$columna['numero']."'><br>";
+        echo "</div>";
+    echo "<div class='input-group mb-3'>";
+    echo "<div class='input-group-prepend'>";
+    echo "<span class='input-group-text' id='basic-addon1'>➝</span>";
+    echo "</div>";
+        echo "<br> <input type='date' name='V5' value='".$columna['cumpleaños']."'><br>";
+        echo "</div>";
+        echo "</div>";
+echo "</center>";
+echo "<input type='submit' name='Actualizar' value='Actualizar'><br><br>";
+echo "</form>";
+echo "<br><br><a href='consultar.php'>Ir a Consultas</a>";
 }
 ?>
+<!--FOOTHER------------------------------------------------------------------------------------------------------------------------------------->
 <br><br><br><br>
 <footer class="container">
     <p>© 2018-2022 Christian A. Ramirez Ganzo 

@@ -66,6 +66,12 @@ $resul = mysqli_query( $conexion, $query ) or die ( "Algo ha ido mal en la consu
 $query="SELECT * FROM `inventario`;";
 $resul = mysqli_query( $conexion, $query ) or die ( "Algo ha ido mal en la consulta a la base de datos ");
 
+echo "<div class='container'>";
+    echo "<div class='row'>";
+    echo "<div class='col'>";
+    echo "</div>";
+    echo "<div class='col-12'>";
+
 echo "<br><br><table style='width: 100%;' border='1'>";
 echo "<tr>";
 echo "<td bgcolor='#A9D0FF'>Marcar</td>";
@@ -90,6 +96,14 @@ echo "<td bgcolor='#A9D0FF'>Marcar</td>";
 echo "</table>";
 echo "<br><h2>¡Modificado con Éxito!</h2><br>";
 echo "<a href='consultar.php'>Ir a inicio</a>";
+
+echo "</div>";
+    echo "<div class='col'>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+
 mysqli_close ( $conexion );
 ?>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

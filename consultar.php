@@ -72,6 +72,12 @@ echo "Bienvenido<h2> ".$n1."</h2>";
 $query="Select * From inventario";
     $resul = mysqli_query( $conexion, $query ) or die ( "Algo ha ido mal en la consulta a la base de datos");
   
+    echo "<div class='container'>";
+    echo "<div class='row'>";
+    echo "<div class='col'>";
+    echo "</div>";
+    echo "<div class='col-12'>";
+
     echo "<br><form name='formulario' method='post' action='buscarUP.php'>";
     echo "<div class='input-group mb-3'>
     <div class='input-group-prepend'>
@@ -108,7 +114,15 @@ $query="Select * From inventario";
 echo "&nbsp;&nbsp;";
  echo "<input type='submit' name='submit4' class='btn btn-warning' value='Actualizar'>";
  echo "</form>";
- echo "<a href='agpro.php'>Agregar Usuario</a>";
+ echo "<br>";
+ echo "<a href='agpro.php' type='button' class='btn btn-primary' >Agregar Usuario</a>";
+
+    echo "</div>";
+    echo "<div class='col'>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
  
 mysqli_close( $conexion );
   ?>
