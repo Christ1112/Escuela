@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilosPrincipales.css">
+</head>
+<body class="negro">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark fixed-top menubr  dorado">
+        <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+              
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="../acceso.html">Cerrar Sesion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/pagos.php">Pagos</a>
+              </li>
+          </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+          </div>
+    </nav>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"></a>
+    </nav>
+  </header>
+
+  <div class="container"><br><br>
+    <h1 style="text-align: center;">Explora nuestras Maestrías en Programación</h1><br><br>
+    <div id="tarjetasContainer" class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../IMG/maestrias/maestria1.JPG" class="card-img-top" alt="Maestría 1">
+          <div class="card-body  gris">
+            <h5 class="card-title  doradoTexto">Maestría en Desarrollo de Software</h5>
+            <p>Aprende las mejores prácticas en desarrollo de software y adquiere habilidades avanzadas en programación.</p>
+            <a href="#" class="btn dorado blancoTexto" data-toggle="modal" data-target="#modal1">Más información</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../IMG/maestrias/maestria2.JPG" class="card-img-top" alt="Maestría 2">
+          <div class="card-body  gris">
+            <h5 class="card-title  doradoTexto">Maestría en la Inteligencia Artificial</h5>
+            <p>Sumérgete en el mundo de la inteligencia artificial y aprende a desarrollar algoritmos y sistemas inteligentes.</p>
+            <a href="#" class="btn dorado blancoTexto" data-toggle="modal" data-target="#modal2">Más información</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../IMG/maestrias/maestria3.JPG" class="card-img-top" alt="Maestría 3">
+          <div class="card-body  gris">
+            <h5 class="card-title  doradoTexto">Maestría en Seguridad Informática</h5>
+            <p>Conviértete en un experto en protección de sistemas y redes con nuestra maestría en seguridad informática.</p>
+            <a href="#" class="btn dorado blancoTexto" data-toggle="modal" data-target="#modal3">Más información</a>
+          </div>
+        </div>
+      </div>
+  
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Maestría en Desarrollo de Software</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p style="color: black;">Aprende las mejores prácticas en desarrollo de software y adquiere habilidades avanzadas en programación.</p>
+          <p style="color: black;">Detalles adicionales y descripción de la maestría.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">Maestría en Inteligencia Artificial</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p style="color: black;">Sumérgete en el mundo de la inteligencia artificial y aprende a desarrollar algoritmos y sistemas inteligentes.</p>
+          <p style="color: black;">Detalles adicionales y descripción de la maestría.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">Maestría en Seguridad Informática</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p style="color: black;">Conviértete en un experto en protección de sistemas y redes con nuestra maestría en seguridad informática.</p>
+          <p style="color: black;">Detalles adicionales y descripción de la maestría.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

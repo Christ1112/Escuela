@@ -1,13 +1,9 @@
-body.formulario-inicio{
-    text-align: center;
-}
-
 #encabezado{
     margin-bottom: 0%;
 }
 
 .menubr{
-    background-color: rgb(254, 123, 123); 
+    background-color: rgb(70, 70, 70); 
 }
 
 #principal2{
@@ -27,7 +23,7 @@ body.formulario-inicio{
 }
 
 #text{
-    color: rgb(129, 129, 129);
+    color: rgb(116, 116, 116);
 }
 
 .textpr{
@@ -44,19 +40,10 @@ body.formulario-inicio{
     text-align: right;
 }
 
-.tabladatos{
-    text-align: center;
+p{
+    color: white;
 }
 
-button{
-    cursor: pointer;
-}
-
-.divbuscar{
-    background-color: blueviolet;
-}
-
-td{
-    margin-left: 50%;
-    margin-right: 50%;
+h2{
+    color: white;
 }
